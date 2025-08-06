@@ -24,7 +24,7 @@ import {
   Trophy,
 } from "lucide-react";
 import { useDataProtection } from "@/lib/data-protection";
-import { trackPrivacyAction } from "@/lib/analytics";
+
 import Link from "next/link";
 
 export default function AccountDeletionPage() {
@@ -52,7 +52,6 @@ export default function AccountDeletionPage() {
     try {
       await requestDataDeletion(email, reason);
       setStep("submitted");
-      trackPrivacyAction("account_deletion_requested");
     } catch {
       alert("Failed to submit deletion request. Please try again.");
     } finally {

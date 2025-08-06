@@ -1,10 +1,17 @@
-import { Metadata } from 'next'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Metadata } from "next";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: 'Help Center',
-  description: 'Get help with PickIt. Find answers to common questions and learn how to use all features.',
-}
+  title: "Help Center",
+  description:
+    "Get help with PickIt. Find answers to common questions and learn how to use all features.",
+};
 
 export default function HelpPage() {
   return (
@@ -18,7 +25,7 @@ export default function HelpPage() {
             Find answers to common questions and get the most out of PickIt.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <Card>
             <CardHeader>
@@ -94,16 +101,20 @@ export default function HelpPage() {
             Still Need Help?
           </h2>
           <p className="text-slate-600 mb-6">
-            Can't find what you're looking for? Our support team is here to help.
+            Can&apos;t find what you&apos;re looking for? Our support team is
+            here to help.
           </p>
           <p className="text-sm text-slate-500">
-            Response time: Within 24 hours • Email:{' '}
-            <a href="mailto:support@pickit.app" className="text-primary-600 hover:underline">
+            Response time: Within 24 hours • Email:{" "}
+            <a
+              href="mailto:support@pickit.app"
+              className="text-primary-600 hover:underline"
+            >
               support@pickit.app
             </a>
           </p>
         </div>
       </div>
     </div>
-  )
+  );
 }

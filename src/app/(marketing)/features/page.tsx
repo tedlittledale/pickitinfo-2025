@@ -1,9 +1,10 @@
-import { Metadata } from 'next'
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Features',
-  description: 'Discover PickIt&apos;s powerful features for community litter picking, route tracking, gamification, and council integration.',
-}
+  title: "Features",
+  description:
+    "Discover PickIt&apos;s powerful features for community litter picking, route tracking, gamification, and council integration.",
+};
 
 export default function FeaturesPage() {
   return (
@@ -14,15 +15,16 @@ export default function FeaturesPage() {
             App Features
           </h1>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Explore the powerful features that make PickIt the UK's leading community litter picking app.
+            Explore the powerful features that make PickIt the UK&apos;s leading
+            community litter picking app.
           </p>
         </div>
-        
+
         {/* TODO: Add interactive feature demonstrations */}
         <div className="text-center text-slate-500 py-20">
           <p>Feature demonstrations coming soon...</p>
         </div>
       </div>
     </div>
-  )
+  );
 }
